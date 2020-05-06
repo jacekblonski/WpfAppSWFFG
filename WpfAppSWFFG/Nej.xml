@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Character xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <woundThreshold>13</woundThreshold>
+  <currentWounds>0</currentWounds>
+  <Brawn>3</Brawn>
+  <Agility>2</Agility>
+  <Intellect>2</Intellect>
+  <Cunning>3</Cunning>
+  <Willpower>2</Willpower>
+  <Presence>2</Presence>
+  <ForceRank>1</ForceRank>
+</Character>
