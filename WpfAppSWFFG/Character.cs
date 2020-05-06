@@ -181,12 +181,6 @@ namespace WpfAppSWFFG
          */
         public Skill Lightsaber { get; set; }
 
-        [XmlElement("Leadership")]
-        /*
-         * Pr
-         */
-        public Skill Leadership { get; set; }
-
         [XmlElement("Melee")]
         /*
          * Br
