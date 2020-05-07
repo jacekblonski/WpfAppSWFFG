@@ -1,0 +1,36 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="WpfAppSWFFG.CharacteristicsWindow"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppSWFFG"
+        mc:Ignorable="d"
+        Title="Skills" Height="450" Width="800">
+    <Grid Margin="0,0,0,0" RenderTransformOrigin="0.541,0.579">
+        <GroupBox Header="General Skills">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="AstrogationButton" Content="Astrogation" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="AstrogationCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="AstrogationSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>            
+        <GroupBox Header="Combat Skills" Margin="400,0,0,0">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="BrawlButton" Content="Brawl" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="BrawlCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="BrawlSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="MeleeButton" Content="Melee" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="MeleeCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="MeleeSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
+
