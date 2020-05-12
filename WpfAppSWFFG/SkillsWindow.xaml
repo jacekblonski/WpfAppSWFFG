@@ -1,19 +1,146 @@
 ﻿<Window 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="WpfAppSWFFG.CharacteristicsWindow"
+        x:Class="WpfAppSWFFG.SkillsWindow"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppSWFFG"
         mc:Ignorable="d"
-        Title="Skills" Height="450" Width="800">
+        Title="Skills" Height="900" Width="800">
     <Grid Margin="0,0,0,0" RenderTransformOrigin="0.541,0.579">
         <GroupBox Header="General Skills">
             <StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="AstrogationButton" Content="Astrogation" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <Button x:Name="AstrogationButton" Content="Astrogation(Int)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
                     <CheckBox x:Name="AstrogationCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
-                    <Slider x:Name="AstrogationSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5" />
+                    <Slider x:Name="AstrogationSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Minimum="0" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="AthleticsButton" Content="Athletics(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="AthleticsCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="AthleticsSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="CharmButton" Content="Charm(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="CharmCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="CharmSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="CoercionButton" Content="Coercion(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="CoercionCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="CoercionSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="ComputersButton" Content="Computers(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="ComputersCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="ComputersSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="CoolButton" Content="Cool(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="CoolCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="CoolSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="CoordinationButton" Content="Coordination(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="CoordinationCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="CoordinationSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="DeceptionButton" Content="Deception(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="DeceptionCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="DeceptionSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="DisciplineButton" Content="Discipline(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="DisciplineCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="DisciplineSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="LeadershipButton" Content="Leadership(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="LeadershipCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="LeadershipSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="MechanicsButton" Content="Mechanics(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="MechanicsCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="MechanicsSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="MedicineButton" Content="Medicine(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="MedicineCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="MedicineSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="NegotiationButton" Content="Negotiation(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="NegotiationCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="NegotiationSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="PerceptionButton" Content="Perception(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="PerceptionCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="PerceptionSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="PilotingPlanetaryButton" Content="PilotingPlanetary(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="PilotingPlanetaryCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="PilotingPlanetarySlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="PilotingSpaceButton" Content="PilotingSpace(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="PilotingSpaceCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="PilotingSpaceSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="ResilienceButton" Content="Resilience(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="ResilienceCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="ResilienceSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="SkulduggeryButton" Content="Skulduggery(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="SkulduggeryCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="SkulduggerySlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="StealthButton" Content="Stealth(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="StealthCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="StealthSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="StreetwiseButton" Content="Streetwise(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="StreetwiseCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="StreetwiseSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="SurvivalButton" Content="Survival(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="SurvivalCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="SurvivalSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button x:Name="VigilanceButton" Content="Vigilance(Br)" Width="100" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.657,-6.211"/>
+                    <CheckBox x:Name="VigilanceCheckBox" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                    <Slider x:Name="VigilanceSlider" HorizontalAlignment="Left" Margin="0,0,0,0" Width="120" Maximum="5"
+                            Ticks="0,1,2,3,4,5" IsSnapToTickEnabled="True" TickPlacement="BottomRight"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>            

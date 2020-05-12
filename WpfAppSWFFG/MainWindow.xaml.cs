@@ -77,5 +77,11 @@ namespace WpfAppSWFFG
             StrainBar.Value = loadedCharacter.currentStrain;
             Application.Current.Resources["loadedCharacter"] = loadedCharacter;
         }
+
+        private void btnSkills_Click(object sender, RoutedEventArgs e)
+        {
+            SkillsWindow skillsWindow = new SkillsWindow();
+            skillsWindow.Show();
+        }
     }
 }

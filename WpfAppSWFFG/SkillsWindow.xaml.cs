@@ -18,22 +18,18 @@ using System.Xml.Serialization;
 namespace WpfAppSWFFG
 {
     /// <summary>
-    /// Interaction logic for CharacteristicsWindow.xaml
+    /// Interaction logic for SkillsWindow.xaml
     /// </summary>
-    public partial class CharacteristicsWindow : Window
+    public partial class SkillsWindow : Window
     {
 
-        public CharacteristicsWindow()
+        public SkillsWindow()
         {
             InitializeComponent();
             Character loadedCharacter = Application.Current.Resources["loadedCharacter"] as Character;
-            BrawnValue.Content = loadedCharacter.Brawn;
-            AgilityValue.Content = loadedCharacter.Agility;
-            IntellectValue.Content = loadedCharacter.Intellect;
-            CunningValue.Content = loadedCharacter.Cunning;
-            WillpowerValue.Content = loadedCharacter.Willpower;
-            PresenceValue.Content = loadedCharacter.Presence;
-            ForceRatingValue.Content = loadedCharacter.ForceRank;
+            AstrogationSlider.Value = loadedCharacter.Astrogation.Ranks;
+            BrawlSlider.Value = loadedCharacter.Brawl.Ranks;
+            MeleeSlider.Value = loadedCharacter.Melee.Ranks;
         }
     }
 }

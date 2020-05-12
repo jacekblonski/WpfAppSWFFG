@@ -13,6 +13,7 @@
         <Label x:Name="CurrentWounds" Content="Current" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnExit" Content="Save and Exit" HorizontalAlignment="Left" Margin="676,390,0,0" VerticalAlignment="Top" Click="BtnExit_Click"/>
         <Button x:Name="btnCharacteristics" Content="Characteristics" HorizontalAlignment="Left" Margin="496,102,0,0" VerticalAlignment="Top" Click="BtnCharacteristics_Click"/>
+        <Button x:Name="btnSkills" Content="Skills" HorizontalAlignment="Left" Margin="496,132,0,0" VerticalAlignment="Top" Click="btnSkills_Click"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="237,97,0,0" VerticalAlignment="Top" Click="Take_Wounds"/>
         <TextBox x:Name="WoundAddValue" HorizontalAlignment="Left" Margin="254,98,0,0" Text="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="12"/>
         <Label Content="Strain" HorizontalAlignment="Left" Margin="52,100,0,0" VerticalAlignment="Top" Height="29" Width="75"/>
